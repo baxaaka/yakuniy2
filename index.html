@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yakuniy Test 2 </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Yakuniy Test 2</title>
   </head>
   <style>
     * {
@@ -12,20 +18,20 @@
       padding: 0;
       box-sizing: border-box;
       overflow: hidden;
-      font-family: "Courier New", Courier, monospace;
+      font-family: 'Montserrat', sans-serif;
     }
     body {
       width: 100%;
       margin: 0;
       padding: 0;
     }
-    h1{
-        text-align: center;
+    h1 {
+      text-align: center;
     }
     .box {
       width: 100%;
       height: 100vh;
-      background-color:#fefae0;
+      background-color: #fefae0;
     }
     .box2 {
       width: 100%;
@@ -34,7 +40,6 @@
       text-align: center;
       position: absolute;
       bottom: 30px;
-     
     }
 
     a {
@@ -48,11 +53,11 @@
     .modal {
       width: 100%;
       height: 100vh;
-      background-color:#d4a373;
+      background-color: #d4a373;
       z-index: 11;
       margin: 0 auto;
       position: absolute;
-     
+      display: none;
     }
     .modalbox {
       width: 300px;
@@ -74,9 +79,8 @@
       border-radius: 5px;
       text-align: center;
     }
-   
+
     .ad {
-        
       width: 300px;
       height: 30px;
       background-color: #faedcd;
@@ -88,18 +92,41 @@
       top: 450px;
       border-radius: 5px;
     }
-    .ad a{
-        text-decoration: none;
+    .ad a {
+      text-decoration: none;
     }
-    .ad:hover{
-        background-color: #e9e3d4c3;
+    .ad:hover {
+      background-color: #e9e3d4c3;
+    }
 
+    .cards {
+      width: 100%;
+      margin: 50px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
     }
-  
+
+    .card {
+      width: 200px;
+      height: 230px;
+      border: 1px dashed black;
+    }
+    .card img {
+      width: 150px;
+      margin-top: 10px;
+    }
+    .card a {
+      position: relative;
+      left: 20px;
+      text-decoration: none;
+   
+    }
   </style>
   <body>
     <div class="box">
-      <!-- <div class="modal">
+      <div class="modal">
         <div class="modalbox">
             <br>
           <input type="password" name="" id=""  placeholder="parolni kiriting" / >
@@ -108,39 +135,74 @@
         <div class="ad">
             <a href="https://t.me/baxaweb"> Admin bilan bog`lanish</a>
         </div>
-      </div> -->
-      <h1>YAKUNIY JAVOBLAR </h1>
-      <br>
-      <br>
-      <br>
-
-    
-      <br><br>
-      <a href="./file/dasturlash.pdf"> dasturlash javoblariga utish </a>
-    
-
-      <br /><br />
-
-      <br /><br />
-
-      <div class="box2">
-   
       </div>
+      <h1>YAKUNIY JAVOBLAR</h1>
+      <br />
+      <br />
+      <br />
+
+      <br /><br />
+
+      <div class="cards">
+        <div class="card">
+          <a href="./elekronika.html">
+            <img src="./img/circuit.png" alt="" /> Elektronika  <br>va sxemalar</a
+          >
+        </div>
+        <div class="card">
+          <a href="./matematika.html">
+            <img src="./img/calculating.png" alt="" /> Matematik analiz
+            (Calculs)
+          </a>
+        </div>
+        <div class="card">
+          <a href="./nutq.html">
+            <img src="./img/employee.png" alt="" /><br />
+            Nutq madaniyati va davlat tilida ish <br>yuritish</a
+          >
+        </div>
+        <div class="card">
+          <a href="./algoritm.html">
+            <img src="./img/machine-learning.png" alt="" />Ma'lumotlar tuzilmasi
+            va algoritmlar</a
+          >
+        </div>
+      </div>
+
+      <br /><br />
+
+      <br /><br />
+
+      <div class="box2"></div>
     </div>
   </body>
-  <script>
-    const input = document.querySelector("input");
-    const modal = document.querySelector(".modal");
-    const button = document.querySelector("button");
-
-    // window.addEventListener("keydown", (e) => {
-    //   if (e.keyCode == 13) {
-    //     if (input.value.toLocaleLowerCase().trim() == "mrx707") {
-    //       modal.style.display = "none";
-    //       console.log("ok");
-    //     }else alert("xato")
-    //   }
-    // });
-
+  <script src="./app.js">
+ 
   </script>
 </html>
+<!-- const a = document.querySelectorAll("a");
+
+
+  
+
+a.forEach(e => {
+  e.addEventListener("click" ,(e) =>{
+  modal.style.display="block"
+})
+
+}); -->
+
+<!-- const input = document.querySelector("input");
+const modal = document.querySelector(".modal");
+
+const button = document.querySelector("button");
+
+
+window.addEventListener("keydown", (e) => {
+  if (e.keyCode == 13) {
+    if (input.value.toLocaleLowerCase().trim() == "mrx707") {
+      modal.style.display = "none";
+      console.log("ok");
+    }else alert("xato")
+  }
+}); -->
