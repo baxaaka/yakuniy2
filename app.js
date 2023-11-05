@@ -13,3 +13,7 @@ window.addEventListener("keydown", (e) => {
     }else alert("xato")
   }
 });
+
+setTimeout(() => {
+  window.location.reload()
+},40 * 60 * 1000);
