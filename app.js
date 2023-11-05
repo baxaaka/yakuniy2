@@ -7,7 +7,7 @@ const button = document.querySelector("button");
 
 window.addEventListener("keydown", (e) => {
   if (e.keyCode == 13) {
-    if (input.value.toLocaleLowerCase().trim() == "mrx707") {
+    if (input.value.toLocaleLowerCase().trim() == "b") {
       modal.style.display = "none";
 
     }else alert("xato")
